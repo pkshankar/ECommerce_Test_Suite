@@ -8,13 +8,29 @@
   </listeners>
   <test name="ECommerce Test(failed)">
     <classes>
-      <class name="com.ecom.qa.testcases.WishlistPageTest">
+      <class name="com.ecom.qa.testcases.ApplicationHomePageTest">
         <methods>
-          <include name="wishlistSharedTest"/>
           <include name="setUp"/>
+          <include name="appHomePageTitleTest"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.ecom.qa.testcases.WishlistPageTest -->
+      </class> <!-- com.ecom.qa.testcases.ApplicationHomePageTest -->
+      <class name="com.ecom.qa.testcases.CompareProductsPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="validatePopUpMessageTest"/>
+        </methods>
+      </class> <!-- com.ecom.qa.testcases.CompareProductsPageTest -->
+      <class name="com.ecom.qa.testcases.MobileHomePageTest">
+        <methods>
+          <include name="checkMaxItemsCartTest"/>
+          <include name="tearDown"/>
+          <include name="validateMobileNameSortTest"/>
+          <include name="setUp"/>
+          <include name="phonePriceTest"/>
+        </methods>
+      </class> <!-- com.ecom.qa.testcases.MobileHomePageTest -->
     </classes>
   </test> <!-- ECommerce Test(failed) -->
 </suite> <!-- Failed suite [ECommerce Website Test Automation Suite] -->
