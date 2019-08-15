@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2019-08-14T17:27:26Z" name="Default suite" finished-at="2019-08-14T17:27:39Z" duration-ms="13508">
+    <groups>
+    </groups>
+    <test started-at="2019-08-14T17:27:26Z" name="Default test" finished-at="2019-08-14T17:27:39Z" duration-ms="13508">
+      <class name="com.ecom.qa.testcases.ApplicationHomePageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ecom.qa.testcases.ApplicationHomePageTest@24e8de5c]" started-at="2019-08-14T22:57:26Z" name="setUp" finished-at="2019-08-14T22:57:37Z" duration-ms="11692" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="appHomePageTitleTest()[pri:1, instance:com.ecom.qa.testcases.ApplicationHomePageTest@24e8de5c]" started-at="2019-08-14T22:57:38Z" name="appHomePageTitleTest" description="Verify home page title test" finished-at="2019-08-14T22:57:38Z" duration-ms="216" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appHomePageTitleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ecom.qa.testcases.ApplicationHomePageTest@24e8de5c]" started-at="2019-08-14T22:57:38Z" name="tearDown" finished-at="2019-08-14T22:57:39Z" duration-ms="1085" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.ecom.qa.testcases.ApplicationHomePageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,5 @@
+com\ecom\qa\testcases\ApplicationHomePageTest.class
+com\ecom\qa\testcases\WishlistPageTest.class
+com\ecom\qa\testcases\MobileHomePageTest.class
+com\ecom\qa\testcases\CompareProductsPageTest.class
+com\ecom\qa\testcases\RegistrationDetailPageTest.class

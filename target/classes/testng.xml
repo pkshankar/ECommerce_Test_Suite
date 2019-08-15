@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ECommerce Website Test Automation Suite">
+	<listeners>
+		<listener class-name="com.ecom.qa.listener.ExtentReporterListener" />
+		<listener class-name="com.ecom.qa.listener.IAnnotationTransformerListener" />
+		<listener class-name="com.ecom.qa.listener.TestListener" />
+	</listeners>
+	<test name="ECommerce Test">
+		<classes>
+			<class name="com.ecom.qa.testcases.MobileHomePageTest" />
+			<class name="com.ecom.qa.testcases.ApplicationHomePageTest" />
+			<class name="com.ecom.qa.testcases.CompareProductsPageTest" />
+			<class name="com.ecom.qa.testcases.RegistrationDetailPageTest" />
+			<class name="com.ecom.qa.testcases.WishlistPageTest" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

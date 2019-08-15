@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [ECommerce Website Test Automation Suite]">
+  <listeners>
+    <listener class-name="com.ecom.qa.listener.ExtentReporterListener"/>
+    <listener class-name="com.ecom.qa.listener.IAnnotationTransformerListener"/>
+    <listener class-name="com.ecom.qa.listener.TestListener"/>
+  </listeners>
+  <test name="ECommerce Test(failed)">
+    <classes>
+      <class name="com.ecom.qa.testcases.RegistrationDetailPageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="userRegistrationTest" invocation-numbers="1 1 1 1 2 2 3 3"/>
+        </methods>
+      </class> <!-- com.ecom.qa.testcases.RegistrationDetailPageTest -->
+      <class name="com.ecom.qa.testcases.MobileHomePageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="validateMobileNameSortTest"/>
+          <include name="setUp"/>
+          <include name="phonePriceTest"/>
+        </methods>
+      </class> <!-- com.ecom.qa.testcases.MobileHomePageTest -->
+    </classes>
+  </test> <!-- ECommerce Test(failed) -->
+</suite> <!-- Failed suite [ECommerce Website Test Automation Suite] -->
