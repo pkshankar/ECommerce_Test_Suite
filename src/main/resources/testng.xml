@@ -6,8 +6,8 @@
 		<listener class-name="com.ecom.qa.listener.IAnnotationTransformerListener" />
 		<listener class-name="com.ecom.qa.listener.TestListener" />
 	</listeners>
-	<parameter name="emailId" value="a20@email.com"/>
-	<parameter name="password" value="robpet123"/>
+	<parameter name="emailId" value="a27@email.com"/>
+	<parameter name="password" value="a27@email.com"/>
 	<test name="ECommerce Test">
 		<classes>
 		<!-- 	<class name="com.ecom.qa.testcases.MobileHomePageTest" />

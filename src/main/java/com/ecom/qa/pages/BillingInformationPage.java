@@ -40,17 +40,25 @@ public class BillingInformationPage extends TestBase {
 	@Step("Entering billing information step")
 	public void enterBillingInformation(String adrs, String cty, String ste, String zipc, String tphone) {
 
-		address.clear();
-		address.sendKeys(adrs);
-		city.clear();
-		city.sendKeys(cty);
-		Select sel = new Select(stateDropdown);
-		sel.selectByVisibleText(ste);
-		zip.clear();
-		zip.sendKeys(zipc);
-		telephone.clear();
-		telephone.sendKeys(tphone);
-		continueBtn.click();
+		if (address.isDisplayed()) {
+			address.clear();
+			address.sendKeys(adrs);
+			city.clear();
+			city.sendKeys(cty);
+			Select sel = new Select(stateDropdown);
+			sel.selectByVisibleText(ste);
+			zip.clear();
+			zip.sendKeys(zipc);
+			telephone.clear();
+			telephone.sendKeys(tphone);
+			continueBtn.click();
+		}
+
+		else {
+
+			continueBtn.click();
+
+		}
 
 	}
 

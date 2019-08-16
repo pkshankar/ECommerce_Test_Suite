@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [ECommerce Website Test Automation Suite]" guice-stage="DEVELOPMENT">
-  <parameter name="password" value="robpet123"/>
-  <parameter name="emailId" value="a20@email.com"/>
+  <parameter name="password" value="yulbat456"/>
+  <parameter name="emailId" value="a23@email.com"/>
   <listeners>
     <listener class-name="com.ecom.qa.listener.ExtentReporterListener"/>
     <listener class-name="com.ecom.qa.listener.IAnnotationTransformerListener"/>
