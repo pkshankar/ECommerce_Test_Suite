@@ -15,13 +15,13 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.ecom.qa.testcases.ApplicationHomePageTest -->
-      <class name="com.ecom.qa.testcases.CompareProductsPageTest">
+      <class name="com.ecom.qa.testcases.WishlistPageTest">
         <methods>
+          <include name="wishlistSharedTest"/>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="validatePopUpMessageTest"/>
         </methods>
-      </class> <!-- com.ecom.qa.testcases.CompareProductsPageTest -->
+      </class> <!-- com.ecom.qa.testcases.WishlistPageTest -->
       <class name="com.ecom.qa.testcases.MobileHomePageTest">
         <methods>
           <include name="checkMaxItemsCartTest"/>

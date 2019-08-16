@@ -27,6 +27,12 @@ public class TestUtil extends TestBase {
 
 	public static long IMPLICIT_WAIT = 20;
 
+	public static String extractStringSubString(String inputString, int index) {
+
+		return inputString.substring(index);
+
+	}
+
 	public static void takeScreenshotOnFailure(ITestResult result) {
 
 		File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);

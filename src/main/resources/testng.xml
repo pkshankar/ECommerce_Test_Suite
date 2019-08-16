@@ -6,13 +6,20 @@
 		<listener class-name="com.ecom.qa.listener.IAnnotationTransformerListener" />
 		<listener class-name="com.ecom.qa.listener.TestListener" />
 	</listeners>
+	<parameter name="emailId" value="a20@email.com"/>
+	<parameter name="password" value="robpet123"/>
 	<test name="ECommerce Test">
 		<classes>
-			<class name="com.ecom.qa.testcases.MobileHomePageTest" />
+		<!-- 	<class name="com.ecom.qa.testcases.MobileHomePageTest" />
 			<class name="com.ecom.qa.testcases.ApplicationHomePageTest" />
 			<class name="com.ecom.qa.testcases.CompareProductsPageTest" />
 			<class name="com.ecom.qa.testcases.RegistrationDetailPageTest" />
 			<class name="com.ecom.qa.testcases.WishlistPageTest" />
+			<class name="com.ecom.qa.testcases.ShoppingCartPageTest" />
+ -->			<class name="com.ecom.qa.testcases.BillingInformationPageTest" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
+
+
+	

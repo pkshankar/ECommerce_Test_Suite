@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [ECommerce Website Test Automation Suite]">
+<suite name="Failed suite [ECommerce Website Test Automation Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="password" value="robpet123"/>
+  <parameter name="emailId" value="a20@email.com"/>
   <listeners>
     <listener class-name="com.ecom.qa.listener.ExtentReporterListener"/>
     <listener class-name="com.ecom.qa.listener.IAnnotationTransformerListener"/>
@@ -8,21 +10,13 @@
   </listeners>
   <test name="ECommerce Test(failed)">
     <classes>
-      <class name="com.ecom.qa.testcases.RegistrationDetailPageTest">
+      <class name="com.ecom.qa.testcases.BillingInformationPageTest">
         <methods>
-          <include name="setup"/>
-          <include name="tearDown"/>
-          <include name="userRegistrationTest" invocation-numbers="1 1 1 1 2 2 3 3"/>
-        </methods>
-      </class> <!-- com.ecom.qa.testcases.RegistrationDetailPageTest -->
-      <class name="com.ecom.qa.testcases.MobileHomePageTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="validateMobileNameSortTest"/>
+          <include name="isOrderNumberGenerated"/>
           <include name="setUp"/>
-          <include name="phonePriceTest"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.ecom.qa.testcases.MobileHomePageTest -->
+      </class> <!-- com.ecom.qa.testcases.BillingInformationPageTest -->
     </classes>
   </test> <!-- ECommerce Test(failed) -->
 </suite> <!-- Failed suite [ECommerce Website Test Automation Suite] -->

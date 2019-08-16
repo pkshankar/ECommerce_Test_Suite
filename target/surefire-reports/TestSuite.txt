@@ -1,37 +1,39 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 12, Failures: 3, Errors: 0, Skipped: 7, Time elapsed: 196.392 s <<< FAILURE! - in TestSuite
-setUp(com.ecom.qa.testcases.ApplicationHomePageTest)  Time elapsed: 48 s  <<< FAILURE!
+Tests run: 12, Failures: 3, Errors: 0, Skipped: 7, Time elapsed: 136.213 s <<< FAILURE! - in TestSuite
+setUp(com.ecom.qa.testcases.WishlistPageTest)  Time elapsed: 45.267 s  <<< FAILURE!
 org.openqa.selenium.TimeoutException: 
 timeout
   (Session info: chrome=76.0.3809.100)
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'WKWIN5154091', ip: '192.168.5.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 75.0.3770.140 (2d9f97485c7b..., userDataDir: C:\Users\pkshank\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:56373}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 96b42d1f79dbf512de9e11d5ea620b85
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 75.0.3770.140 (2d9f97485c7b..., userDataDir: C:\Users\pkshank\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52930}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 85f1af734f0edc78104216fadb3318fe
+	at com.ecom.qa.testcases.WishlistPageTest.setUp(WishlistPageTest.java:35)
+
+setUp(com.ecom.qa.testcases.ApplicationHomePageTest)  Time elapsed: 89.119 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+timeout
+  (Session info: chrome=76.0.3809.100)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'WKWIN5154091', ip: '192.168.5.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 75.0.3770.140 (2d9f97485c7b..., userDataDir: C:\Users\pkshank\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:65399}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a78f0109c74ffb7a28e70e239a577fb9
 	at com.ecom.qa.testcases.ApplicationHomePageTest.setUp(ApplicationHomePageTest.java:29)
 
-setUp(com.ecom.qa.testcases.CompareProductsPageTest)  Time elapsed: 92.474 s  <<< FAILURE!
-org.openqa.selenium.TimeoutException: 
-timeout
+setUp(com.ecom.qa.testcases.MobileHomePageTest)  Time elapsed: 17.797 s  <<< FAILURE!
+org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=76.0.3809.100)
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'WKWIN5154091', ip: '192.168.5.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 75.0.3770.140 (2d9f97485c7b..., userDataDir: C:\Users\pkshank\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:65484}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 6f2ec031b0a7f4e9070b757769722e7f
-	at com.ecom.qa.testcases.CompareProductsPageTest.setUp(CompareProductsPageTest.java:38)
-
-setUp(com.ecom.qa.testcases.MobileHomePageTest)  Time elapsed: 136.427 s  <<< FAILURE!
-org.openqa.selenium.TimeoutException: 
-timeout
-  (Session info: chrome=76.0.3809.100)
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'WKWIN5154091', ip: '192.168.5.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 75.0.3770.140 (2d9f97485c7b..., userDataDir: C:\Users\pkshank\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:56576}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 81a55af3e69e2857607f2a522d14eb6d
-	at com.ecom.qa.testcases.MobileHomePageTest.setUp(MobileHomePageTest.java:39)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 75.0.3770.140 (2d9f97485c7b..., userDataDir: C:\Users\pkshank\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61824}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: dec68a5c0c03ae7e207158a89e5ead14
+*** Element info: {Using=xpath, value=//a[text()='Mobile']}
+	at com.ecom.qa.testcases.MobileHomePageTest.setUp(MobileHomePageTest.java:41)
 

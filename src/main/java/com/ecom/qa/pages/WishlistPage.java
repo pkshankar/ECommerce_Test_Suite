@@ -28,6 +28,9 @@ public class WishlistPage extends TestBase {
 	@FindBy(xpath = "//li[@class='success-msg']/ul/li/span")
 	WebElement wishlistSharedMsg;
 
+	@FindBy(xpath = "//button[@title='Add to Cart']")
+	WebElement addToCartBtn;
+
 	public WishlistPage() {
 
 		PageFactory.initElements(driver, this);
@@ -47,11 +50,19 @@ public class WishlistPage extends TestBase {
 		shareWishlistBtn.click();
 
 	}
-	
+
 	@Step("Fetching wishlist shared message step")
 	public String wishListSharedMsg() {
 
 		return wishlistSharedMsg.getText();
+	}
+
+	@Step("Clicking add to cart button")
+	public ShoppingCartPage clickAddToCart() {
+
+		addToCartBtn.click();
+
+		return new ShoppingCartPage();
 	}
 
 }
