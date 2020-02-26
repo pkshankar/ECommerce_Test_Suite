@@ -25,23 +25,19 @@ public class CompareProductsPage extends TestBase {
 
 		PageFactory.initElements(driver, this);
 	}
-	
-	
-	@Step("Fetching compare products page title step")
+
 	public String compareProductsPageTitle() {
 
 		return compareProductsPageTitle.getText();
 	}
 
-	@Step("Fetching list of mobile phones step")
 	public List<String> listPhoneNames() {
 
 		return TestUtil.sort(wListPhoneName);
 	}
-	
-	@Step("Closing compare pop up step")
+
 	public void closeComparePopUp() {
-		
+
 		driver.close();
 	}
 

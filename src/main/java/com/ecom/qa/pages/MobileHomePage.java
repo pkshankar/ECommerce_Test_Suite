@@ -32,7 +32,7 @@ public class MobileHomePage extends TestBase {
 
 	@FindBy(xpath = "//p[@class='product-name']/a")
 	List<WebElement> homePagePhoneNames;
-	
+
 	@FindBy(xpath = "(//a[@title='My Account'])[2]")
 	WebElement myAccountLink;
 
@@ -41,13 +41,11 @@ public class MobileHomePage extends TestBase {
 		PageFactory.initElements(driver, this);
 	}
 
-	@Step("Fetching mobile page title step")
 	public String mobilePageTitle() {
 
 		return driver.getTitle();
 	}
 
-	@Step("Fetching select drop down values step")
 	public Select listDropDownValues() {
 
 		selectDropdown = new Select(selectName);
@@ -55,14 +53,12 @@ public class MobileHomePage extends TestBase {
 		return selectDropdown;
 	}
 
-	@Step("Fetching list of phone names step")
 	public List<WebElement> listPhoneNames() {
 
 		return listPhonesNames;
 
 	}
 
-	@Step("Fetching {0} phone price step")
 	public String phonePrice(String phoneName) {
 
 		Map<String, String> map = new HashMap<String, String>();
@@ -87,7 +83,6 @@ public class MobileHomePage extends TestBase {
 
 	}
 
-	@Step("Clicking on {0} phone step")
 	public MobileDetailPage clickMobileName(String phoneName) {
 
 		String bXpath = "//h2[@class='product-name']/a[text()='";
@@ -100,7 +95,6 @@ public class MobileHomePage extends TestBase {
 
 	}
 
-	@Step("Checking maximum items in cart of {0} phone step")
 	public ShoppingCartPage checkMaxItemsCart(String phoneName) {
 
 		String bXpath = "//a[@title='";
@@ -111,7 +105,6 @@ public class MobileHomePage extends TestBase {
 		return new ShoppingCartPage();
 	}
 
-	@Step("Comparing phones: {0} vs {1} step")
 	public void addToCompareFeature(String phoneName1, String phoneName2) {
 
 		driver.findElement(
@@ -125,15 +118,13 @@ public class MobileHomePage extends TestBase {
 				.click();
 
 	}
-	
-	@Step("Clicking on compare button step")
+
 	public void clickCompareBtn() {
 
 		compareBtn.click();
 
 	}
 
-	@Step("Switching to a different window step")
 	public void switchToWindow() {
 
 		/* Switch to window can be added in test util class - will try that later */
@@ -149,16 +140,14 @@ public class MobileHomePage extends TestBase {
 		driver.switchTo().window(childWindowId);
 
 	}
-    
-	@Step("Fetching phone list step")
+
 	public List<String> homeListPhoneNames() {
 
 		return TestUtil.sort(homePagePhoneNames);
 	}
 
-	@Step("Clicking my account step")
 	public void clickMyAccountLink() {
-		
+
 		myAccountLink.click();
 	}
 }

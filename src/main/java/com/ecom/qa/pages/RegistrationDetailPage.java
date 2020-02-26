@@ -43,7 +43,6 @@ public class RegistrationDetailPage extends TestBase {
 		return new UserHomePage();
 	}
 
-	@Step("Creating new account: Details: First Name: {0}, Middle Name: {1}, Last Name: {2}, Email Address: {3}, Password: {4} step")
 	public void createAccount(String firstName, String middleName, String lastName, String emailAddress,
 			String password) {
 

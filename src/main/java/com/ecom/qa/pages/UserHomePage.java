@@ -24,19 +24,16 @@ public class UserHomePage extends TestBase {
 		PageFactory.initElements(driver, this);
 	}
 
-	@Step("Fetching registration message step")
 	public String getRegistrationMsg() {
 
 		return registrationMsg.getText();
 	}
 
-	@Step("Clicking on TV link step")
 	public void clickTvLink() {
 
 		tvLink.click();
 	}
 
-	@Step("Clicking on my wishlist link step")
 	public WishlistPage clickMyWishlist() {
 
 		myWishlistLink.click();

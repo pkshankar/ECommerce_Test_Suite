@@ -62,7 +62,6 @@ public class ShoppingCartPage extends TestBase {
 
 	/**********************************************************************************/
 
-	@Step("Fetching error message when items in cart {qty} exceed maximum permissible limit(500) step")
 	public String checkMaxItemsCartTest(String qty) {
 
 		qtyText.clear();
@@ -75,7 +74,6 @@ public class ShoppingCartPage extends TestBase {
 
 	}
 
-	@Step("Fetching empty cart message step")
 	public String emptyCartMessage() {
 
 		emptyCartLink.click();
@@ -84,57 +82,48 @@ public class ShoppingCartPage extends TestBase {
 
 	}
 
-	@Step("Selecting state step")
 	public Select selectStateDropDown() {
 
 		Select selectDropDown = new Select(selectState);
 		return selectDropDown;
 	}
 
-	@Step("Entering zip code step")
 	public void enterZipCode(String zip) {
 
 		zipCode.sendKeys(zip);
 	}
 
-	@Step("Clicking on estimate link step")
 	public void clickEstimate() {
 
 		estimateLink.click();
 	}
 
-	@Step("Fetching shipping cost step")
 	public WebElement fetchShippingCost() {
 
 		return shippingCost;
 	}
 
-	@Step("Clicking shipping cost radio button step")
 	public void clickShippingCostRadioBtn() {
 
 		shippingCostRadioBtn.click();
 	}
 
-	@Step("Clicking update total button step")
 	public void clickUpdateTotalBtn() {
 
 		updateTotalBtn.click();
 	}
 
-	@Step("Fetching subtotal step")
 	public String fetchSubtotal() {
 
 		return subtotal.getText();
 
 	}
 
-	@Step("Fetching grand total")
 	public String fetchGrandTotal() {
 
 		return grandTotal.getText();
 	}
 
-	@Step("Clicking proceed to checkout button")
 	public void clickProceedToCheckoutBtn() {
 
 		proceedToCheckoutBtn.click();

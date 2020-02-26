@@ -37,7 +37,7 @@ public class BillingInformationPage extends TestBase {
 	}
 
 	/***************************************************************************/
-	@Step("Entering billing information step")
+
 	public void enterBillingInformation(String adrs, String cty, String ste, String zipc, String tphone) {
 
 		if (address.isDisplayed()) {

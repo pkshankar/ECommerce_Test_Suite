@@ -36,7 +36,6 @@ public class WishlistPage extends TestBase {
 		PageFactory.initElements(driver, this);
 	}
 
-	@Step("Entering message: {1} and sending an email to: {0} step")
 	public void enterEmailIdMsg(String emailId, String msg) {
 
 		emailIdTextBox.sendKeys(emailId);
@@ -44,20 +43,17 @@ public class WishlistPage extends TestBase {
 
 	}
 
-	@Step("Clicking share wishlist step")
 	public void clickShareWishlist() {
 
 		shareWishlistBtn.click();
 
 	}
 
-	@Step("Fetching wishlist shared message step")
 	public String wishListSharedMsg() {
 
 		return wishlistSharedMsg.getText();
 	}
 
-	@Step("Clicking add to cart button")
 	public ShoppingCartPage clickAddToCart() {
 
 		addToCartBtn.click();

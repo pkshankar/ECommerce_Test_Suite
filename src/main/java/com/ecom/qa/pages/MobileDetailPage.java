@@ -22,16 +22,14 @@ public class MobileDetailPage extends TestBase {
 		PageFactory.initElements(driver, this);
 	}
 
-	@Step("Fetching {0} phone name from phone detail page step")
 	public String detailPagePhoneName(String pName) {
 
 		return wPhoneName.getText();
 
 	}
 
-	@Step("Fetching phone price from detail page step")
 	public String detailPagePhonePrice() {
-		
+
 		return wPhonePrice.getText();
 	}
 }

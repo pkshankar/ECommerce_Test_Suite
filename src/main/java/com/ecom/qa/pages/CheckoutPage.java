@@ -36,41 +36,36 @@ public class CheckoutPage extends TestBase {
 	}
 
 	/*****************************************************************************/
-	@Step("Clicking continue button on checkout page step")
+
 	public void clickContinueBtn1() {
 
 		continueBtn1.click();
 
 	}
 
-	@Step("Clicking check/money order radio button step")
 	public void clickCheckMoneyOrderRadioBtn() {
 
 		checkMoneyOrderRadioBtn.click();
 
 	}
 
-	@Step("Clicking continue button after selecting check/money order step")
 	public void clickContinueBtn2() {
 
 		continueBtn2.click();
 
 	}
 
-	@Step("Clicking place order button")
 	public void clickPlaceOrder() {
 
 		placeOrderBtn.click();
 
 	}
 
-	@Step("Fetching order received message")
 	public String FetchOrderReceivedMessage() {
 
 		return orderReceivedMessage.getText();
 	}
 
-	@Step("Fetching order number")
 	public WebElement FetchOrderNumber() {
 
 		return orderNo;

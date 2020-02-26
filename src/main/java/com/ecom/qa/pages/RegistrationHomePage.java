@@ -27,7 +27,6 @@ public class RegistrationHomePage extends TestBase {
 		PageFactory.initElements(driver, this);
 	}
 
-	@Step("Clicking on create account step")
 	public RegistrationDetailPage clickCreateAccountLink() {
 
 		createAccountLink.click();
@@ -35,7 +34,6 @@ public class RegistrationHomePage extends TestBase {
 		return new RegistrationDetailPage();
 	}
 
-	@Step("Logging on to website with username: {0} and password: {1} step")
 	public void loginToWebsite(String uId, String pwd) {
 
 		userId.sendKeys(uId);

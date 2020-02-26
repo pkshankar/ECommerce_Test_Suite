@@ -15,8 +15,8 @@ public class ApplicationHomePage extends TestBase {
 
 	@FindBy(xpath = "//a[text()='TV']")
 	WebElement tvLink;
-	
-	@FindBy(xpath="(//a[@title='My Account'])[2]")
+
+	@FindBy(xpath = "(//a[@title='My Account'])[2]")
 	WebElement myAccountLink;
 
 	/* Initialize web objects of this class with webdriver instance */
@@ -26,29 +26,25 @@ public class ApplicationHomePage extends TestBase {
 		PageFactory.initElements(driver, this);
 	}
 
-	@Step("Fetching home page title step")
 	public String appHomePageTitle() {
 
 		return driver.getTitle();
 	}
 
-	@Step("Clicking mobile link step")
 	public MobileHomePage clickMobileLink() {
 
 		mobileLink.click();
-		
+
 		return new MobileHomePage();
 
 	}
-	
-	@Step("Clicking my account link step")
+
 	public RegistrationHomePage clickMyAccountLink() {
-		
+
 		myAccountLink.click();
-		
+
 		return new RegistrationHomePage();
-		
-		
+
 	}
 
 }
