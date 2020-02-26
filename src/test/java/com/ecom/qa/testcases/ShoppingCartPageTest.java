@@ -58,9 +58,7 @@ public class ShoppingCartPageTest extends TestBase {
 	}
 
 	@Test(priority = 1, description = "Validate that shipping cost is generated")
-	@Severity(SeverityLevel.CRITICAL)
-	@Description("Test Case Description: Verify that shipping cost is generated")
-	@Story("Story Name: To check whether shipping cost is generated")
+
 	public void isShippingCostGenerated() {
 
 		Assert.assertTrue(shoppingCartPage.fetchShippingCost().isDisplayed());
@@ -68,9 +66,7 @@ public class ShoppingCartPageTest extends TestBase {
 	}
 
 	@Test(priority = 2, description = "Validate grand total")
-	@Severity(SeverityLevel.CRITICAL)
-	@Description("Test Case Description: Validate that grand total is correct")
-	@Story("Story Name: To check grandtotal")
+
 	public void validateGrandTotal() {
 
 		shoppingCartPage.clickShippingCostRadioBtn();

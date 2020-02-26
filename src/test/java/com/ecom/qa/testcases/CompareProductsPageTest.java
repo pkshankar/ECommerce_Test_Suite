@@ -45,9 +45,6 @@ public class CompareProductsPageTest extends TestBase {
 	}
 
 	@Test(priority = 1, description = "Validate phone compare feature")
-	@Severity(SeverityLevel.CRITICAL)
-	@Description("Test Case Description: Verify that user is able to compare 2 phones")
-	@Story("Story Name: To check phone comparison feature")
 
 	public void validatePopUpMessageTest() {
 

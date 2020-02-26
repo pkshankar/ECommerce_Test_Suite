@@ -45,9 +45,7 @@ public class MobileHomePageTest extends TestBase {
 	}
 
 	@Test(priority = 1, description = "Validate mobile page title")
-	@Severity(SeverityLevel.MINOR)
-	@Description("Test Case Description: Verify the title of mobile page")
-	@Story("Story Name: To check mobile page title")
+
 	public void mobilePageTitleTest() {
 
 		Assert.assertEquals(mobileHomePage.mobilePageTitle(), "Mobile");
@@ -55,9 +53,7 @@ public class MobileHomePageTest extends TestBase {
 	}
 
 	@Test(priority = 2, description = "Verify mobile name sorting feature")
-	@Severity(SeverityLevel.CRITICAL)
-	@Description("Test Case Description: Verify user is able to sort phones by name")
-	@Story("Story Name: To check sorting feature by mobile name")
+
 	public void validateMobileNameSortTest() {
 
 		List<WebElement> nameListUnsorted = mobileHomePage.listPhoneNames();
@@ -73,9 +69,7 @@ public class MobileHomePageTest extends TestBase {
 	}
 
 	@Test(priority = 3, description = "Verify mobile price")
-	@Severity(SeverityLevel.CRITICAL)
-	@Description("Test Case Description: Verify mobile price on mobile home page and mobile detail page")
-	@Story("Story Name: To check mobile price on home page and detail page")
+
 	public void phonePriceTest() {
 
 		String sHomePageMobilePrice = mobileHomePage.phonePrice("SONY XPERIA");
@@ -89,9 +83,7 @@ public class MobileHomePageTest extends TestBase {
 	}
 
 	@Test(priority = 4, description = "Verify error message when items in cart exceed maximum permissible limit")
-	@Severity(SeverityLevel.CRITICAL)
-	@Description("Test Case Description: Verify that an error message is triggered when items in cart are greater than what's allowed")
-	@Story("Story Name: To check error message when maximum permissible limit in the cart is violated")
+
 	public void checkMaxItemsCartTest() {
 
 		shoppingCartPage = mobileHomePage.checkMaxItemsCart("Samsung Galaxy");
@@ -112,11 +104,9 @@ public class MobileHomePageTest extends TestBase {
 
 	}
 
-	
-	
 	@AfterMethod
 	public void tearDown() {
-		
+
 		eventFiringDriver.unregister(webEventListener);
 		driver.quit();
 	}

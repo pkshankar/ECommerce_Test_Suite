@@ -36,8 +36,9 @@ public class WishlistPageTest extends TestBase {
 		mobileHomePage = new MobileHomePage();
 		mobileHomePage.clickMyAccountLink();
 		registrationHomePage = new RegistrationHomePage();
-		registrationHomePage.loginToWebsite("a23@email.com", "yulbat456"); // THIS CAN BE READ FROM EXCEL BUT THAT IS NOT THE
-																		// PURPOSE OF THIS TEST CASE
+		registrationHomePage.loginToWebsite("a23@email.com", "yulbat456"); // THIS CAN BE READ FROM EXCEL BUT THAT IS
+																			// NOT THE
+																			// PURPOSE OF THIS TEST CASE
 		userHomePage = new UserHomePage();
 		userHomePage.clickTvLink();
 		tvHomePage = new TVHomePage();
@@ -47,9 +48,7 @@ public class WishlistPageTest extends TestBase {
 	}
 
 	@Test(priority = 1, description = "Verify wishlist share feature")
-	@Severity(SeverityLevel.NORMAL)
-	@Description("Test Case Description: Verify that user is able to share wishlist")
-	@Story("Story Name: To check wishlist share feature")
+
 	public void wishlistSharedTest() {
 
 		wishlistPage.clickShareWishlist();

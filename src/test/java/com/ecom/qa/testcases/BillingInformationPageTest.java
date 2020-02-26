@@ -48,7 +48,7 @@ public class BillingInformationPageTest extends TestBase {
 		tvHomePage = new TVHomePage();
 		shoppingCartPage = new ShoppingCartPage();
 		billingInformationPage = new BillingInformationPage();
-		checkoutPage = new CheckoutPage(); 
+		checkoutPage = new CheckoutPage();
 		applicationHomePage.clickMyAccountLink();
 		registrationHomePage.loginToWebsite(eId, pwd);
 		userHomePage.clickTvLink();
@@ -63,9 +63,6 @@ public class BillingInformationPageTest extends TestBase {
 	}
 
 	@Test(priority = 1, description = "Validate that the order number is generated")
-	@Severity(SeverityLevel.CRITICAL)
-	@Description("Test Case Description: Verify that order number is generated")
-	@Story("Story Name: To check whether order number is generated")
 	public void isOrderNumberGenerated() {
 
 		billingInformationPage.enterBillingInformation(TestData.address, TestData.city, TestData.state, TestData.zip,
@@ -76,8 +73,6 @@ public class BillingInformationPageTest extends TestBase {
 		checkoutPage.clickPlaceOrder();
 		Assert.assertTrue(checkoutPage.FetchOrderNumber().isDisplayed());
 		System.out.println(checkoutPage.FetchOrderNumber().getText());
-
-		
 
 	}
 

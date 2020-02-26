@@ -17,14 +17,13 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.ecom.qa.testcases.BillingInformationPageTest -->
-      <class name="com.ecom.qa.testcases.MobileHomePageTest">
+      <class name="com.ecom.qa.testcases.CompareProductsPageTest">
         <methods>
-          <include name="checkMaxItemsCartTest"/>
-          <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="phonePriceTest"/>
+          <include name="tearDown"/>
+          <include name="validatePopUpMessageTest"/>
         </methods>
-      </class> <!-- com.ecom.qa.testcases.MobileHomePageTest -->
+      </class> <!-- com.ecom.qa.testcases.CompareProductsPageTest -->
       <class name="com.ecom.qa.testcases.ShoppingCartPageTest">
         <methods>
           <include name="validateGrandTotal"/>

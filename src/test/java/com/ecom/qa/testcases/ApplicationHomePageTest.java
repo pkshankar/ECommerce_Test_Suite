@@ -30,10 +30,8 @@ public class ApplicationHomePageTest extends TestBase {
 		appHomePage = new ApplicationHomePage();
 	}
 
-	@Test(priority=1, description="Verify home page title test")
-	@Severity(SeverityLevel.MINOR)
-	@Description("Test Case Description: Verify title of home page")
-	@Story("Story Name: To check home page title")
+	@Test(priority = 1, description = "Verify home page title test")
+
 	public void appHomePageTitleTest() {
 
 		Assert.assertEquals(appHomePage.appHomePageTitle(), "Home page");
@@ -45,7 +43,7 @@ public class ApplicationHomePageTest extends TestBase {
 
 		eventFiringDriver.unregister(webEventListener);
 		driver.quit();
-		
+
 	}
 
 }
