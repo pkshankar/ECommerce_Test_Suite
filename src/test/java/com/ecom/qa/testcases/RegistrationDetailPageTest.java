@@ -50,7 +50,7 @@ public class RegistrationDetailPageTest extends TestBase {
 		return rcvdData.iterator();
 	}
 
-	@Test(dataProvider = "getTestData", enabled=false)
+	@Test(dataProvider = "getTestData")
 	public void userRegistrationTest(String firstName, String middleName, String lastName, String emailAddress,
 			String password) {
 

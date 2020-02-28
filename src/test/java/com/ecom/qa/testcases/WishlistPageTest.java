@@ -36,9 +36,12 @@ public class WishlistPageTest extends TestBase {
 		mobileHomePage = new MobileHomePage();
 		mobileHomePage.clickMyAccountLink();
 		registrationHomePage = new RegistrationHomePage();
-		registrationHomePage.loginToWebsite("a23@email.com", "yulbat456"); // THIS CAN BE READ FROM EXCEL BUT THAT IS
-																			// NOT THE
-																			// PURPOSE OF THIS TEST CASE
+		registrationHomePage.loginToWebsite(prop.getProperty("emailId"), prop.getProperty("password")); // THIS CAN BE
+																										// READ FROM
+																										// EXCEL BUT
+																										// THAT IS
+		// NOT THE
+		// PURPOSE OF THIS TEST CASE
 		userHomePage = new UserHomePage();
 		userHomePage.clickTvLink();
 		tvHomePage = new TVHomePage();

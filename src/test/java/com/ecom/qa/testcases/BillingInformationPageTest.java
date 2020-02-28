@@ -37,8 +37,8 @@ public class BillingInformationPageTest extends TestBase {
 	}
 
 	@BeforeMethod
-	@Parameters({ "emailId", "password" })
-	public void setUp(String eId, String pwd) {
+	// @Parameters({ "emailId", "password" })
+	public void setUp() {
 
 		initialization();
 		applicationHomePage = new ApplicationHomePage();
@@ -50,7 +50,7 @@ public class BillingInformationPageTest extends TestBase {
 		billingInformationPage = new BillingInformationPage();
 		checkoutPage = new CheckoutPage();
 		applicationHomePage.clickMyAccountLink();
-		registrationHomePage.loginToWebsite(eId, pwd);
+		registrationHomePage.loginToWebsite(prop.getProperty("emailId"), prop.getProperty("password"));
 		userHomePage.clickTvLink();
 		tvHomePage.addToWishlistTV(TestData.tvName);
 		wishlistPage.clickAddToCart();

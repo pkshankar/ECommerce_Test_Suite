@@ -36,8 +36,8 @@ public class ShoppingCartPageTest extends TestBase {
 	}
 
 	@BeforeMethod
-	@Parameters({ "emailId", "password" })
-	public void setUp(String eId, String pwd) {
+	// @Parameters({ "emailId", "password" })
+	public void setUp() {
 
 		initialization();
 		applicationHomePage = new ApplicationHomePage();
@@ -47,7 +47,7 @@ public class ShoppingCartPageTest extends TestBase {
 		tvHomePage = new TVHomePage();
 		shoppingCartPage = new ShoppingCartPage();
 		applicationHomePage.clickMyAccountLink();
-		registrationHomePage.loginToWebsite(eId, pwd);
+		registrationHomePage.loginToWebsite(prop.getProperty("emailId"), prop.getProperty("password"));
 		userHomePage.clickTvLink();
 		tvHomePage.addToWishlistTV(TestData.tvName);
 		wishlistPage.clickAddToCart();

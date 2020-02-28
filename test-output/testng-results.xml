@@ -1,629 +1,297 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="12" passed="7" failed="0" skipped="4">
+<testng-results ignored="0" total="14" passed="14" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-02-26T06:23:57Z" name="ECommerce Website Test Automation Suite" finished-at="2020-02-26T06:28:09Z" duration-ms="252158">
+  <suite started-at="2020-02-28T14:47:20Z" name="ECommerce Website Test Automation Suite" finished-at="2020-02-28T14:51:17Z" duration-ms="236991">
     <groups>
     </groups>
-    <test started-at="2020-02-26T06:23:57Z" name="ECommerce Test" finished-at="2020-02-26T06:28:09Z" duration-ms="252158">
-      <class name="com.ecom.qa.testcases.WishlistPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ecom.qa.testcases.WishlistPageTest@79b663b3]" started-at="2020-02-26T11:54:11Z" name="setUp" finished-at="2020-02-26T11:54:27Z" duration-ms="16062" status="PASS">
+    <test started-at="2020-02-28T14:47:20Z" name="ECommerce Test" finished-at="2020-02-28T14:51:17Z" duration-ms="236991">
+      <class name="com.ecom.qa.testcases.BillingInformationPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ecom.qa.testcases.BillingInformationPageTest@d59970a]" started-at="2020-02-28T20:19:20Z" name="setUp" finished-at="2020-02-28T20:19:42Z" duration-ms="21988" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="wishlistSharedTest()[pri:1, instance:com.ecom.qa.testcases.WishlistPageTest@79b663b3]" started-at="2020-02-26T11:54:27Z" name="wishlistSharedTest" description="Verify wishlist share feature" finished-at="2020-02-26T11:54:30Z" duration-ms="2928" status="PASS">
+        <test-method signature="isOrderNumberGenerated()[pri:1, instance:com.ecom.qa.testcases.BillingInformationPageTest@d59970a]" started-at="2020-02-28T20:19:42Z" name="isOrderNumberGenerated" description="Validate that the order number is generated" finished-at="2020-02-28T20:19:47Z" duration-ms="5330" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isOrderNumberGenerated -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ecom.qa.testcases.BillingInformationPageTest@d59970a]" started-at="2020-02-28T20:19:47Z" name="tearDown" finished-at="2020-02-28T20:19:48Z" duration-ms="958" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.ecom.qa.testcases.BillingInformationPageTest -->
+      <class name="com.ecom.qa.testcases.WishlistPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ecom.qa.testcases.WishlistPageTest@66d57c1b]" started-at="2020-02-28T20:18:38Z" name="setUp" finished-at="2020-02-28T20:18:56Z" duration-ms="18681" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="wishlistSharedTest()[pri:1, instance:com.ecom.qa.testcases.WishlistPageTest@66d57c1b]" started-at="2020-02-28T20:18:56Z" name="wishlistSharedTest" description="Verify wishlist share feature" finished-at="2020-02-28T20:19:00Z" duration-ms="3193" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wishlistSharedTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ecom.qa.testcases.WishlistPageTest@79b663b3]" started-at="2020-02-26T11:54:30Z" name="tearDown" finished-at="2020-02-26T11:54:31Z" duration-ms="901" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ecom.qa.testcases.WishlistPageTest@66d57c1b]" started-at="2020-02-28T20:19:00Z" name="tearDown" finished-at="2020-02-28T20:19:01Z" duration-ms="937" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.ecom.qa.testcases.WishlistPageTest -->
-      <class name="com.ecom.qa.testcases.BillingInformationPageTest">
-        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.ecom.qa.testcases.BillingInformationPageTest@5d28bcd5]" started-at="2020-02-26T11:55:07Z" name="setUp" finished-at="2020-02-26T11:55:42Z" duration-ms="34958" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[a27@email.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[a27@email.com]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[@title='Add to Cart']"}
-  (Session info: chrome=80.0.3987.116)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'WKWIN5154091', ip: '10.207.184.203', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.116, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\pkshank\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:65125}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 0e84418125d3d461cbfe36921a06f9af
-*** Element info: {Using=xpath, value=//button[@title='Add to Cart']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@title='Add to Cart']"}
-  (Session info: chrome=80.0.3987.116)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'WKWIN5154091', ip: '10.207.184.203', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.116, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\pkshank\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:65125}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 0e84418125d3d461cbfe36921a06f9af
-*** Element info: {Using=xpath, value=//button[@title='Add to Cart']}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at jdk.internal.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
-	at com.sun.proxy.$Proxy21.findElement(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy24.click(Unknown Source)
-	at com.ecom.qa.pages.WishlistPage.clickAddToCart(WishlistPage.java:59)
-	at com.ecom.qa.testcases.BillingInformationPageTest.setUp(BillingInformationPageTest.java:56)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="isOrderNumberGenerated()[pri:1, instance:com.ecom.qa.testcases.BillingInformationPageTest@5d28bcd5]" started-at="2020-02-26T11:55:42Z" name="isOrderNumberGenerated" description="Validate that the order number is generated" finished-at="2020-02-26T11:55:42Z" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[@title='Add to Cart']"}
-  (Session info: chrome=80.0.3987.116)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'WKWIN5154091', ip: '10.207.184.203', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.116, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\pkshank\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:65125}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 0e84418125d3d461cbfe36921a06f9af
-*** Element info: {Using=xpath, value=//button[@title='Add to Cart']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@title='Add to Cart']"}
-  (Session info: chrome=80.0.3987.116)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'WKWIN5154091', ip: '10.207.184.203', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.116, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\pkshank\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:65125}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 0e84418125d3d461cbfe36921a06f9af
-*** Element info: {Using=xpath, value=//button[@title='Add to Cart']}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at jdk.internal.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
-	at com.sun.proxy.$Proxy21.findElement(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy24.click(Unknown Source)
-	at com.ecom.qa.pages.WishlistPage.clickAddToCart(WishlistPage.java:59)
-	at com.ecom.qa.testcases.BillingInformationPageTest.setUp(BillingInformationPageTest.java:56)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- isOrderNumberGenerated -->
-      </class> <!-- com.ecom.qa.testcases.BillingInformationPageTest -->
       <class name="com.ecom.qa.testcases.ApplicationHomePageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ecom.qa.testcases.ApplicationHomePageTest@25cc7470]" started-at="2020-02-26T11:55:42Z" name="setUp" finished-at="2020-02-26T11:55:50Z" duration-ms="8517" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ecom.qa.testcases.ApplicationHomePageTest@534243e4]" started-at="2020-02-28T20:19:48Z" name="setUp" finished-at="2020-02-28T20:19:57Z" duration-ms="9263" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="appHomePageTitleTest()[pri:1, instance:com.ecom.qa.testcases.ApplicationHomePageTest@25cc7470]" started-at="2020-02-26T11:55:50Z" name="appHomePageTitleTest" description="Verify home page title test" finished-at="2020-02-26T11:55:50Z" duration-ms="15" status="PASS">
+        <test-method signature="appHomePageTitleTest()[pri:1, instance:com.ecom.qa.testcases.ApplicationHomePageTest@534243e4]" started-at="2020-02-28T20:19:57Z" name="appHomePageTitleTest" description="Verify home page title test" finished-at="2020-02-28T20:19:57Z" duration-ms="39" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- appHomePageTitleTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ecom.qa.testcases.ApplicationHomePageTest@25cc7470]" started-at="2020-02-26T11:55:50Z" name="tearDown" finished-at="2020-02-26T11:55:51Z" duration-ms="716" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ecom.qa.testcases.ApplicationHomePageTest@534243e4]" started-at="2020-02-28T20:19:57Z" name="tearDown" finished-at="2020-02-28T20:19:58Z" duration-ms="1028" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.ecom.qa.testcases.ApplicationHomePageTest -->
       <class name="com.ecom.qa.testcases.MobileHomePageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ecom.qa.testcases.MobileHomePageTest@4fcc529]" started-at="2020-02-26T11:53:58Z" name="setUp" finished-at="2020-02-26T11:54:10Z" duration-ms="12439" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ecom.qa.testcases.MobileHomePageTest@452c8a40]" started-at="2020-02-28T20:18:26Z" name="setUp" finished-at="2020-02-28T20:18:37Z" duration-ms="11028" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="mobilePageTitleTest()[pri:1, instance:com.ecom.qa.testcases.MobileHomePageTest@4fcc529]" started-at="2020-02-26T11:54:10Z" name="mobilePageTitleTest" description="Validate mobile page title" finished-at="2020-02-26T11:54:10Z" duration-ms="47" status="PASS">
+        <test-method signature="mobilePageTitleTest()[pri:1, instance:com.ecom.qa.testcases.MobileHomePageTest@452c8a40]" started-at="2020-02-28T20:18:37Z" name="mobilePageTitleTest" description="Validate mobile page title" finished-at="2020-02-28T20:18:37Z" duration-ms="51" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mobilePageTitleTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ecom.qa.testcases.MobileHomePageTest@4fcc529]" started-at="2020-02-26T11:54:10Z" name="tearDown" finished-at="2020-02-26T11:54:11Z" duration-ms="765" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ecom.qa.testcases.MobileHomePageTest@452c8a40]" started-at="2020-02-28T20:18:37Z" name="tearDown" finished-at="2020-02-28T20:18:38Z" duration-ms="877" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ecom.qa.testcases.MobileHomePageTest@4fcc529]" started-at="2020-02-26T11:57:17Z" name="setUp" finished-at="2020-02-26T11:57:27Z" duration-ms="10119" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ecom.qa.testcases.MobileHomePageTest@452c8a40]" started-at="2020-02-28T20:20:14Z" name="setUp" finished-at="2020-02-28T20:20:25Z" duration-ms="11215" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validateMobileNameSortTest()[pri:2, instance:com.ecom.qa.testcases.MobileHomePageTest@4fcc529]" started-at="2020-02-26T11:57:27Z" name="validateMobileNameSortTest" description="Verify mobile name sorting feature" finished-at="2020-02-26T11:57:29Z" duration-ms="1724" status="PASS">
+        <test-method signature="validateMobileNameSortTest()[pri:2, instance:com.ecom.qa.testcases.MobileHomePageTest@452c8a40]" started-at="2020-02-28T20:20:25Z" name="validateMobileNameSortTest" description="Verify mobile name sorting feature" finished-at="2020-02-28T20:20:27Z" duration-ms="1339" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateMobileNameSortTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ecom.qa.testcases.MobileHomePageTest@4fcc529]" started-at="2020-02-26T11:57:29Z" name="tearDown" finished-at="2020-02-26T11:57:29Z" duration-ms="736" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ecom.qa.testcases.MobileHomePageTest@452c8a40]" started-at="2020-02-28T20:20:27Z" name="tearDown" finished-at="2020-02-28T20:20:28Z" duration-ms="838" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ecom.qa.testcases.MobileHomePageTest@4fcc529]" started-at="2020-02-26T11:57:30Z" name="setUp" finished-at="2020-02-26T11:57:47Z" duration-ms="17597" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ecom.qa.testcases.MobileHomePageTest@452c8a40]" started-at="2020-02-28T20:20:49Z" name="setUp" finished-at="2020-02-28T20:20:58Z" duration-ms="9457" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="phonePriceTest()[pri:3, instance:com.ecom.qa.testcases.MobileHomePageTest@4fcc529]" started-at="2020-02-26T11:57:47Z" name="phonePriceTest" description="Verify mobile price" finished-at="2020-02-26T11:57:52Z" duration-ms="5329" status="PASS">
+        <test-method signature="phonePriceTest()[pri:3, instance:com.ecom.qa.testcases.MobileHomePageTest@452c8a40]" started-at="2020-02-28T20:20:58Z" name="phonePriceTest" description="Verify mobile price" finished-at="2020-02-28T20:21:01Z" duration-ms="3010" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- phonePriceTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ecom.qa.testcases.MobileHomePageTest@4fcc529]" started-at="2020-02-26T11:57:52Z" name="tearDown" finished-at="2020-02-26T11:57:53Z" duration-ms="734" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ecom.qa.testcases.MobileHomePageTest@452c8a40]" started-at="2020-02-28T20:21:01Z" name="tearDown" finished-at="2020-02-28T20:21:02Z" duration-ms="825" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ecom.qa.testcases.MobileHomePageTest@4fcc529]" started-at="2020-02-26T11:57:53Z" name="setUp" finished-at="2020-02-26T11:58:03Z" duration-ms="10148" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ecom.qa.testcases.MobileHomePageTest@452c8a40]" started-at="2020-02-28T20:21:02Z" name="setUp" finished-at="2020-02-28T20:21:12Z" duration-ms="9672" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="checkMaxItemsCartTest()[pri:4, instance:com.ecom.qa.testcases.MobileHomePageTest@4fcc529]" started-at="2020-02-26T11:58:03Z" name="checkMaxItemsCartTest" description="Verify error message when items in cart exceed maximum permissible limit" finished-at="2020-02-26T11:58:09Z" duration-ms="5288" status="PASS">
+        <test-method signature="checkMaxItemsCartTest()[pri:4, instance:com.ecom.qa.testcases.MobileHomePageTest@452c8a40]" started-at="2020-02-28T20:21:12Z" name="checkMaxItemsCartTest" description="Verify error message when items in cart exceed maximum permissible limit" finished-at="2020-02-28T20:21:16Z" duration-ms="4518" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkMaxItemsCartTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ecom.qa.testcases.MobileHomePageTest@4fcc529]" started-at="2020-02-26T11:58:09Z" name="tearDown" finished-at="2020-02-26T11:58:09Z" duration-ms="750" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ecom.qa.testcases.MobileHomePageTest@452c8a40]" started-at="2020-02-28T20:21:16Z" name="tearDown" finished-at="2020-02-28T20:21:17Z" duration-ms="994" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.ecom.qa.testcases.MobileHomePageTest -->
       <class name="com.ecom.qa.testcases.ShoppingCartPageTest">
-        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.ecom.qa.testcases.ShoppingCartPageTest@1b812421]" started-at="2020-02-26T11:54:31Z" name="setUp" finished-at="2020-02-26T11:55:07Z" duration-ms="35942" status="FAIL">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ecom.qa.testcases.ShoppingCartPageTest@27494e46]" started-at="2020-02-28T20:19:01Z" name="setUp" finished-at="2020-02-28T20:19:19Z" duration-ms="18126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="isShippingCostGenerated()[pri:1, instance:com.ecom.qa.testcases.ShoppingCartPageTest@27494e46]" started-at="2020-02-28T20:19:19Z" name="isShippingCostGenerated" description="Validate that shipping cost is generated" finished-at="2020-02-28T20:19:19Z" duration-ms="86" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isShippingCostGenerated -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ecom.qa.testcases.ShoppingCartPageTest@27494e46]" started-at="2020-02-28T20:19:19Z" name="tearDown" finished-at="2020-02-28T20:19:20Z" duration-ms="950" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ecom.qa.testcases.ShoppingCartPageTest@27494e46]" started-at="2020-02-28T20:20:28Z" name="setUp" finished-at="2020-02-28T20:20:46Z" duration-ms="18188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateGrandTotal()[pri:2, instance:com.ecom.qa.testcases.ShoppingCartPageTest@27494e46]" started-at="2020-02-28T20:20:46Z" name="validateGrandTotal" description="Validate grand total" finished-at="2020-02-28T20:20:48Z" duration-ms="2058" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateGrandTotal -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ecom.qa.testcases.ShoppingCartPageTest@27494e46]" started-at="2020-02-28T20:20:48Z" name="tearDown" finished-at="2020-02-28T20:20:49Z" duration-ms="793" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.ecom.qa.testcases.ShoppingCartPageTest -->
+      <class name="com.ecom.qa.testcases.RegistrationDetailPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ecom.qa.testcases.RegistrationDetailPageTest@470a9030]" started-at="2020-02-28T20:17:22Z" name="setup" finished-at="2020-02-28T20:17:36Z" duration-ms="13813" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="userRegistrationTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.ecom.qa.testcases.RegistrationDetailPageTest@470a9030]" started-at="2020-02-28T20:17:36Z" name="userRegistrationTest" data-provider="getTestData" finished-at="2020-02-28T20:17:39Z" duration-ms="2868" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[a27@email.com]]>
+                <![CDATA[eNeuiteq]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[a27@email.com]]>
+                <![CDATA[Ronaldyqwqa]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Delverrw]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[a107@email.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[robpet123]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[@title='Add to Cart']"}
-  (Session info: chrome=80.0.3987.116)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'WKWIN5154091', ip: '10.207.184.203', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.116, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\pkshank\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:65059}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: f2ebdccc849c5b10d7e9f256aa87fe37
-*** Element info: {Using=xpath, value=//button[@title='Add to Cart']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@title='Add to Cart']"}
-  (Session info: chrome=80.0.3987.116)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'WKWIN5154091', ip: '10.207.184.203', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.116, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\pkshank\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:65059}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: f2ebdccc849c5b10d7e9f256aa87fe37
-*** Element info: {Using=xpath, value=//button[@title='Add to Cart']}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at jdk.internal.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
-	at com.sun.proxy.$Proxy21.findElement(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy24.click(Unknown Source)
-	at com.ecom.qa.pages.WishlistPage.clickAddToCart(WishlistPage.java:59)
-	at com.ecom.qa.testcases.ShoppingCartPageTest.setUp(ShoppingCartPageTest.java:53)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="isShippingCostGenerated()[pri:1, instance:com.ecom.qa.testcases.ShoppingCartPageTest@1b812421]" started-at="2020-02-26T11:55:07Z" name="isShippingCostGenerated" description="Validate that shipping cost is generated" finished-at="2020-02-26T11:55:07Z" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[@title='Add to Cart']"}
-  (Session info: chrome=80.0.3987.116)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'WKWIN5154091', ip: '10.207.184.203', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.116, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\pkshank\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:65059}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: f2ebdccc849c5b10d7e9f256aa87fe37
-*** Element info: {Using=xpath, value=//button[@title='Add to Cart']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@title='Add to Cart']"}
-  (Session info: chrome=80.0.3987.116)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'WKWIN5154091', ip: '10.207.184.203', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.116, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\pkshank\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:65059}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: f2ebdccc849c5b10d7e9f256aa87fe37
-*** Element info: {Using=xpath, value=//button[@title='Add to Cart']}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at jdk.internal.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
-	at com.sun.proxy.$Proxy21.findElement(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy24.click(Unknown Source)
-	at com.ecom.qa.pages.WishlistPage.clickAddToCart(WishlistPage.java:59)
-	at com.ecom.qa.testcases.ShoppingCartPageTest.setUp(ShoppingCartPageTest.java:53)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- isShippingCostGenerated -->
-        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.ecom.qa.testcases.ShoppingCartPageTest@1b812421]" started-at="2020-02-26T11:57:29Z" name="setUp" finished-at="2020-02-26T11:57:29Z" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="validateGrandTotal()[pri:2, instance:com.ecom.qa.testcases.ShoppingCartPageTest@1b812421]" started-at="2020-02-26T11:57:29Z" name="validateGrandTotal" description="Validate grand total" finished-at="2020-02-26T11:57:29Z" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[@title='Add to Cart']"}
-  (Session info: chrome=80.0.3987.116)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'WKWIN5154091', ip: '10.207.184.203', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.116, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\pkshank\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:65059}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: f2ebdccc849c5b10d7e9f256aa87fe37
-*** Element info: {Using=xpath, value=//button[@title='Add to Cart']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@title='Add to Cart']"}
-  (Session info: chrome=80.0.3987.116)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'WKWIN5154091', ip: '10.207.184.203', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.116, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\pkshank\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:65059}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: f2ebdccc849c5b10d7e9f256aa87fe37
-*** Element info: {Using=xpath, value=//button[@title='Add to Cart']}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at jdk.internal.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
-	at com.sun.proxy.$Proxy21.findElement(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy24.click(Unknown Source)
-	at com.ecom.qa.pages.WishlistPage.clickAddToCart(WishlistPage.java:59)
-	at com.ecom.qa.testcases.ShoppingCartPageTest.setUp(ShoppingCartPageTest.java:53)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateGrandTotal -->
-      </class> <!-- com.ecom.qa.testcases.ShoppingCartPageTest -->
-      <class name="com.ecom.qa.testcases.CompareProductsPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ecom.qa.testcases.CompareProductsPageTest@4beddc56]" started-at="2020-02-26T11:55:51Z" name="setUp" finished-at="2020-02-26T11:56:09Z" duration-ms="17673" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="validatePopUpMessageTest()[pri:1, instance:com.ecom.qa.testcases.CompareProductsPageTest@4beddc56]" started-at="2020-02-26T11:56:09Z" name="validatePopUpMessageTest" description="Validate phone compare feature" finished-at="2020-02-26T11:56:59Z" duration-ms="50355" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[@title='Compare']"}
-  (Session info: chrome=80.0.3987.116)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'WKWIN5154091', ip: '10.207.184.203', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.116, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\pkshank\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:65219}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: ce21f452a130a41071f15b0aff8fab5a
-*** Element info: {Using=xpath, value=//button[@title='Compare']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@title='Compare']"}
-  (Session info: chrome=80.0.3987.116)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'WKWIN5154091', ip: '10.207.184.203', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.116, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\pkshank\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:65219}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: ce21f452a130a41071f15b0aff8fab5a
-*** Element info: {Using=xpath, value=//button[@title='Compare']}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at jdk.internal.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
-	at com.sun.proxy.$Proxy21.findElement(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy24.click(Unknown Source)
-	at com.ecom.qa.pages.MobileHomePage.clickCompareBtn(MobileHomePage.java:124)
-	at com.ecom.qa.testcases.CompareProductsPageTest.validatePopUpMessageTest(CompareProductsPageTest.java:53)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validatePopUpMessageTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ecom.qa.testcases.CompareProductsPageTest@4beddc56]" started-at="2020-02-26T11:56:59Z" name="tearDown" finished-at="2020-02-26T11:57:00Z" duration-ms="845" status="PASS">
+        </test-method> <!-- userRegistrationTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ecom.qa.testcases.RegistrationDetailPageTest@470a9030]" started-at="2020-02-28T20:17:39Z" name="tearDown" finished-at="2020-02-28T20:17:40Z" duration-ms="824" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ecom.qa.testcases.CompareProductsPageTest@4beddc56]" started-at="2020-02-26T11:57:00Z" name="setUp" finished-at="2020-02-26T11:57:11Z" duration-ms="10597" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ecom.qa.testcases.RegistrationDetailPageTest@470a9030]" started-at="2020-02-28T20:17:40Z" name="setup" finished-at="2020-02-28T20:17:51Z" duration-ms="11200" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="userRegistrationTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.ecom.qa.testcases.RegistrationDetailPageTest@470a9030]" started-at="2020-02-28T20:17:51Z" name="userRegistrationTest" data-provider="getTestData" finished-at="2020-02-28T20:17:53Z" duration-ms="2521" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[dZuranewd]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Petereshd]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Coner]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[a108@email.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[johton234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRegistrationTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ecom.qa.testcases.RegistrationDetailPageTest@470a9030]" started-at="2020-02-28T20:17:54Z" name="tearDown" finished-at="2020-02-28T20:17:54Z" duration-ms="889" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ecom.qa.testcases.RegistrationDetailPageTest@470a9030]" started-at="2020-02-28T20:17:54Z" name="setup" finished-at="2020-02-28T20:18:07Z" duration-ms="12291" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="userRegistrationTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.ecom.qa.testcases.RegistrationDetailPageTest@470a9030]" started-at="2020-02-28T20:18:07Z" name="userRegistrationTest" data-provider="getTestData" finished-at="2020-02-28T20:18:10Z" duration-ms="3003" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qVirweq]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Asultrfme]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Bolswarv]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[a109@email.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[swafro345]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRegistrationTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ecom.qa.testcases.RegistrationDetailPageTest@470a9030]" started-at="2020-02-28T20:18:10Z" name="tearDown" finished-at="2020-02-28T20:18:11Z" duration-ms="827" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ecom.qa.testcases.RegistrationDetailPageTest@470a9030]" started-at="2020-02-28T20:18:11Z" name="setup" finished-at="2020-02-28T20:18:22Z" duration-ms="11612" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="userRegistrationTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.ecom.qa.testcases.RegistrationDetailPageTest@470a9030]" started-at="2020-02-28T20:18:22Z" name="userRegistrationTest" data-provider="getTestData" finished-at="2020-02-28T20:18:25Z" duration-ms="2658" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[gYukirrdde]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Jimmypykq]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Leverrj]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[a110@email.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[yulbat456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRegistrationTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ecom.qa.testcases.RegistrationDetailPageTest@470a9030]" started-at="2020-02-28T20:18:25Z" name="tearDown" finished-at="2020-02-28T20:18:26Z" duration-ms="839" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.ecom.qa.testcases.RegistrationDetailPageTest -->
+      <class name="com.ecom.qa.testcases.CompareProductsPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ecom.qa.testcases.CompareProductsPageTest@29006752]" started-at="2020-02-28T20:19:58Z" name="setUp" finished-at="2020-02-28T20:20:08Z" duration-ms="9931" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validatePopUpMessageTest()[pri:1, instance:com.ecom.qa.testcases.CompareProductsPageTest@4beddc56]" started-at="2020-02-26T11:57:11Z" name="validatePopUpMessageTest" description="Validate phone compare feature" finished-at="2020-02-26T11:57:16Z" duration-ms="5349" status="PASS">
+        <test-method signature="validatePopUpMessageTest()[pri:1, instance:com.ecom.qa.testcases.CompareProductsPageTest@29006752]" started-at="2020-02-28T20:20:08Z" name="validatePopUpMessageTest" description="Validate phone compare feature" finished-at="2020-02-28T20:20:13Z" duration-ms="4835" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validatePopUpMessageTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ecom.qa.testcases.CompareProductsPageTest@4beddc56]" started-at="2020-02-26T11:57:16Z" name="tearDown" finished-at="2020-02-26T11:57:17Z" duration-ms="794" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ecom.qa.testcases.CompareProductsPageTest@29006752]" started-at="2020-02-28T20:20:13Z" name="tearDown" finished-at="2020-02-28T20:20:14Z" duration-ms="900" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

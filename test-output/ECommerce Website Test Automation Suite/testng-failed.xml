@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [ECommerce Website Test Automation Suite]" guice-stage="DEVELOPMENT">
-  <parameter name="password" value="a27@email.com"/>
-  <parameter name="emailId" value="a27@email.com"/>
+  <parameter name="a99@email.com" value="robpet123"/>
   <listeners>
     <listener class-name="com.ecom.qa.listener.ExtentReporterListener"/>
     <listener class-name="com.ecom.qa.listener.IAnnotationTransformerListener"/>
@@ -10,20 +9,6 @@
   </listeners>
   <test name="ECommerce Test(failed)">
     <classes>
-      <class name="com.ecom.qa.testcases.BillingInformationPageTest">
-        <methods>
-          <include name="isOrderNumberGenerated"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.ecom.qa.testcases.BillingInformationPageTest -->
-      <class name="com.ecom.qa.testcases.CompareProductsPageTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="validatePopUpMessageTest"/>
-        </methods>
-      </class> <!-- com.ecom.qa.testcases.CompareProductsPageTest -->
       <class name="com.ecom.qa.testcases.ShoppingCartPageTest">
         <methods>
           <include name="validateGrandTotal"/>
@@ -32,6 +17,13 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.ecom.qa.testcases.ShoppingCartPageTest -->
+      <class name="com.ecom.qa.testcases.BillingInformationPageTest">
+        <methods>
+          <include name="isOrderNumberGenerated"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.ecom.qa.testcases.BillingInformationPageTest -->
     </classes>
   </test> <!-- ECommerce Test(failed) -->
 </suite> <!-- Failed suite [ECommerce Website Test Automation Suite] -->
