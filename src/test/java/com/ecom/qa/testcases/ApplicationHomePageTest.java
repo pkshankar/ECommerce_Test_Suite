@@ -17,11 +17,11 @@ public class ApplicationHomePageTest extends TestBase {
 
 	ApplicationHomePage appHomePage;
 
-	public ApplicationHomePageTest() {
-
-		super();
-
-	}
+//	public ApplicationHomePageTest() {
+//
+//		super();
+//
+//	}
 
 	@BeforeMethod
 	public void setUp() {

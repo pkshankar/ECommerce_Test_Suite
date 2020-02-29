@@ -28,10 +28,10 @@ public class MobileHomePageTest extends TestBase {
 	MobileDetailPage mobileDetailPage;
 	ShoppingCartPage shoppingCartPage;
 
-	public MobileHomePageTest() {
-
-		super();
-	}
+//	public MobileHomePageTest() {
+//
+//		super();
+//	}
 
 	@BeforeMethod
 	public void setUp() {

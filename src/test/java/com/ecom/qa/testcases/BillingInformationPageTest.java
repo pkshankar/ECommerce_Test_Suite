@@ -72,7 +72,7 @@ public class BillingInformationPageTest extends TestBase {
 		checkoutPage.clickContinueBtn2();
 		checkoutPage.clickPlaceOrder();
 		Assert.assertTrue(checkoutPage.FetchOrderNumber().isDisplayed());
-		System.out.println(checkoutPage.FetchOrderNumber().getText());
+	//		System.out.println(checkoutPage.FetchOrderNumber().getText());
 
 	}
 

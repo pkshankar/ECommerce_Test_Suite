@@ -25,10 +25,10 @@ public class RegistrationDetailPageTest extends TestBase {
 	RegistrationDetailPage registrationDetailPage;
 	UserHomePage userHomePage;
 
-	public RegistrationDetailPageTest() {
-
-		super();
-	}
+//	public RegistrationDetailPageTest() {
+//
+//		super();
+//	}
 
 	@BeforeMethod
 	public void setup() {

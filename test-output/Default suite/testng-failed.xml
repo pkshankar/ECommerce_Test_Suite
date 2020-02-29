@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.ecom.qa.testcases.BillingInformationPageTest">
+      <class name="com.ecom.qa.testcases.MobileHomePageTest">
         <methods>
-          <include name="isOrderNumberGenerated"/>
-          <include name="setUp"/>
+          <include name="checkMaxItemsCartTest"/>
           <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="phonePriceTest"/>
         </methods>
-      </class> <!-- com.ecom.qa.testcases.BillingInformationPageTest -->
+      </class> <!-- com.ecom.qa.testcases.MobileHomePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

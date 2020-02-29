@@ -24,10 +24,10 @@ public class WishlistPageTest extends TestBase {
 	TVHomePage tvHomePage;
 	WishlistPage wishlistPage;
 
-	public WishlistPageTest() {
-
-		super();
-	}
+//	public WishlistPageTest() {
+//
+//		super();
+//	}
 
 	@BeforeMethod
 	public void setUp() {
@@ -36,12 +36,7 @@ public class WishlistPageTest extends TestBase {
 		mobileHomePage = new MobileHomePage();
 		mobileHomePage.clickMyAccountLink();
 		registrationHomePage = new RegistrationHomePage();
-		registrationHomePage.loginToWebsite(prop.getProperty("emailId"), prop.getProperty("password")); // THIS CAN BE
-																										// READ FROM
-																										// EXCEL BUT
-																										// THAT IS
-		// NOT THE
-		// PURPOSE OF THIS TEST CASE
+		registrationHomePage.loginToWebsite(prop.getProperty("emailId"), prop.getProperty("password"));
 		userHomePage = new UserHomePage();
 		userHomePage.clickTvLink();
 		tvHomePage = new TVHomePage();

@@ -27,10 +27,10 @@ public class CompareProductsPageTest extends TestBase {
 	ShoppingCartPage shoppingCartPage;
 	CompareProductsPage compareProductsPage;
 
-	public CompareProductsPageTest() {
-
-		super();
-	}
+//	public CompareProductsPageTest() {
+//
+//		super();
+//	}
 
 	@BeforeMethod
 	public void setUp() {

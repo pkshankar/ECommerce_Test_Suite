@@ -30,10 +30,10 @@ public class ShoppingCartPageTest extends TestBase {
 	ShoppingCartPage shoppingCartPage;
 	TVHomePage tvHomePage;
 
-	public ShoppingCartPageTest() {
-
-		super();
-	}
+//	public ShoppingCartPageTest() {
+//
+//		super();
+//	}
 
 	@BeforeMethod
 	// @Parameters({ "emailId", "password" })
