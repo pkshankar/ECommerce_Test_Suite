@@ -30,8 +30,7 @@ public class TestBase {
 		prop = new Properties();
 
 		try {
-			FileInputStream fis = new FileInputStream("C:\\Users\\pkshank\\eclipse-workspace\\ECommerce_Test_Suite"
-					+ "\\src\\main\\java\\com\\ecom\\qa\\config\\config.properties");
+			FileInputStream fis = new FileInputStream("/Users/shankar/Documents/Automation_Tests/ECommerce_Test_Suite/src/main/java/com/ecom/qa/config/config.properties");
 
 			try {
 				prop.load(fis);
@@ -52,20 +51,19 @@ public class TestBase {
 
 		if (prop.getProperty("browser").equalsIgnoreCase("chrome")) {
 
-			System.setProperty("webdriver.chrome.driver",
-					"C:\\Users\\pkshank\\eclipse-workspace\\Automation_Concepts\\Browser_Drivers\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver","/Users/shankar/Downloads/chromedriver");
 			driver = new ChromeDriver();
 			
 		}
 
-		else if (prop.getProperty("browser").equalsIgnoreCase("firefox")) {
-
-			System.setProperty("webdriver.gecko.driver",
-					"C:\\Users\\pkshank\\eclipse-workspace\\Automation_Concepts\\Browser_Drivers\\geckodriver.exe");
-			driver = new FirefoxDriver();
-			
-			
-		}
+//		else if (prop.getProperty("browser").equalsIgnoreCase("firefox")) {
+//
+//			System.setProperty("webdriver.gecko.driver",
+//					"C:\\Users\\pkshank\\eclipse-workspace\\Automation_Concepts\\Browser_Drivers\\geckodriver.exe");
+//			driver = new FirefoxDriver();
+//			
+//			
+//		}
 
 		eventFiringDriver = new EventFiringWebDriver(driver);
 		webEventListener = new WebEventListener();
